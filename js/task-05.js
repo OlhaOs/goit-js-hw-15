@@ -3,7 +3,6 @@ const inputValue = document.querySelector('#name-output');
 
 inputEl.addEventListener('input', handleInput);
 
-
 function handleInput(e) {
-    inputValue.textContent = e.target.value.trim() || 'Anonymous';
-  }
+  inputValue.textContent = e.currentTarget.value.trim() || 'Anonymous';
+}
